@@ -456,3 +456,23 @@ strong{
     height: 364px;
     border-radius: 8px;
 }
+
+/* ================facilities=============== */
+
+.facilities-contents{
+    /* display: flex; */
+    align-items: center;
+    align-content: center;
+    gap: 22px;
+    flex: 1 0 0;
+    /* flex-wrap: wrap; */
+}
+.facilities-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 22px; */
+}
+.facilities img{
+    border-radius: 8px;
+}
