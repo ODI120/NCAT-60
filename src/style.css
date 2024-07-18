@@ -24,6 +24,11 @@
     }
 }
 
+section{
+    margin-top: 10rem ;
+    margin-bottom: 10rem;
+}
+
 a{
     text-decoration: none;
 }
@@ -176,7 +181,7 @@ nav .nav-link{
 .common{
     display: flex;
     align-items: center;
-    place-content: center;
+    /* place-content: center; */
 }
 .line{
     width: 266px;
@@ -288,7 +293,7 @@ nav .nav-link{
 /* =======welcome section======= */
 
 .welcome{
-    height: 100vh;
+    /* height: 100vh; */
     place-content: center;
 }
 .header{
@@ -354,7 +359,7 @@ nav .nav-link{
 /* =========================history=========== */
 
 .history{
-    height: 100vh;
+    /* height: 100vh; */
     place-content: center;
 }
 .history img{
@@ -374,7 +379,12 @@ strong{
 }
 
 /* =============legacy========== */
-
+.legacy{
+    /* height: 100vh; */
+    place-content: center;
+    display: flex;
+    align-items: center;
+}
 .legacy-content{
     display: flex;
     width: 597px;
@@ -388,10 +398,7 @@ strong{
     display: flex;
     width: 440px;
     flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
-
-
+    /* align-items: center; */
 }
 .legacy-img img{
     height: 472.947px;
@@ -410,3 +417,42 @@ strong{
     border-radius: 0px 0px 23.382px 23.382px;
 }
 
+
+/* -================heritage========== */
+
+.heritage{
+    /* height: 100vh; */
+    place-content: center;
+    align-items: center;
+}
+
+.heritage-content{
+    display: flex;
+    width: 587px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+}
+.heritage img{
+    width: 588px;
+    height: 346px;
+    border-radius: 8px;
+}
+
+/* ============achievement=================== */
+
+.achievement-img{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.achievement-img-side img{
+    width: 274px;
+    height: 364px;
+    border-radius: 8px;
+}
+.achievement-img-center img{
+    width: 616px;
+    height: 364px;
+    border-radius: 8px;
+}
