@@ -27,6 +27,8 @@
 section{
     margin-top: 10rem ;
     margin-bottom: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 a{
@@ -56,6 +58,12 @@ section .btn-general{
     border: 1px solid var(--color-blue);
     background: var(--color-background);
 }
+section .btn-general:hover{
+    border: 1px solid var(--color-yellow);
+    background: var(--color-blue);
+    color: var(--color-background);
+}
+
 section .btn-general img{
     width: 49px;
     height: 25px;
@@ -182,6 +190,7 @@ nav .nav-link{
     display: flex;
     align-items: center;
     /* place-content: center; */
+    justify-content: center;
 }
 .line{
     width: 266px;
@@ -190,29 +199,27 @@ nav .nav-link{
     margin-bottom: 3rem;
 }
 .hero-section{
-    height: 90vh;
-    width: 100%;
+    margin-top: 4rem;
     background-image: url(/image/bakgimg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .intro{
-    display: flex;
+    /* display: flex; */
     width: 302px;
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
 }
 .intro h4{
     color: var(--color-yellow);
     font-family: "Segoe UI";
     font-size: 48px;
-    font-style: normal;
+    /* font-style: normal; */
     font-weight: 600;
     line-height: 51px; /* 106.25% */
     letter-spacing: 20px;
     text-transform: capitalize;
-    align-self: stretch;
 }
 .intro h5{
     color: var(--color-black);
@@ -221,7 +228,7 @@ nav .nav-link{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.25px;
+    /* letter-spacing: 0.25px; */
     text-transform: capitalize;
 }
 .hero-intro h1{
@@ -238,14 +245,13 @@ nav .nav-link{
 .hero-intro{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 21px;
-    align-self: stretch;
-    width: 80%;
+    /* align-self: center; */
+    /* width: 80%; */
 }
 .hero-intro p{
     color: var(--color-black);
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -262,18 +268,25 @@ nav .nav-link{
     border-radius: 66px;
     background: var(--color-yellow);
 }
+.hero-intro a:hover{
+    border: 1px solid var(--color-blue);
+}
 .hero-intro img{
     width: 49px;
     height: 25px;
     flex-shrink: 0;
 }
 
-.hero-section center{
+/* .hero-section center{
     display: inline-flex;
     align-items: center;
     gap: 136px;
-}
+} */
 
+.right_header img{
+    width: 500px;
+    height: auto;
+}
 .right_header{
     animation: plane 1s linear infinite;
 }
@@ -299,6 +312,8 @@ nav .nav-link{
 .header{
     margin-bottom: 48px;
     text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .welcome-card{
     display: flex;
@@ -309,9 +324,8 @@ nav .nav-link{
     border: 1px solid var(--color-outline);
 }
 .welcome-card img{
-    width: 285px;
-    height: 366px;
-    flex-shrink: 0;
+    /* width: 285px; */
+    height: auto;
     border-radius: 16px;
 }
 .welcome-card .card-content .btn{
@@ -322,6 +336,9 @@ nav .nav-link{
     border-radius: 55px;
     background: var(--color-background);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.welcome-card .card-content .btn:hover{
+    border: 1px solid var(--color-blue);
 }
 
 .welcome-card .author{
@@ -355,6 +372,9 @@ nav .nav-link{
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
     margin-top: 1rem;
 }
+.welcome-card-sm .btn:hover{
+    border: 1px solid var(--color-blue);
+}
 
 /* =========================history=========== */
 
@@ -371,7 +391,7 @@ nav .nav-link{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 45px;
+    gap: 18px;
     flex: 1 0 0;
 }
 strong{
@@ -387,22 +407,22 @@ strong{
 }
 .legacy-content{
     display: flex;
-    width: 597px;
+    /* width: 597px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 .legacy-img{
     display: flex;
-    width: 440px;
+    /* width: 440px; */
     flex-direction: column;
     /* align-items: center; */
 }
 .legacy-img img{
-    height: 472.947px;
-    align-self: stretch;
+    /* height: 472.947px; */
+    /* align-self: stretch; */
     border-radius: 23.382px 23.382px 0px 0px;
 }
 
@@ -412,7 +432,7 @@ strong{
     justify-content: center;
     align-items: center;
     gap: 10.628px;
-    align-self: stretch;
+    /* align-self: stretch; */
     background-color: var(--color-white);
     border-radius: 0px 0px 23.382px 23.382px;
 }
@@ -420,28 +440,28 @@ strong{
 
 /* -================heritage========== */
 
-.heritage{
-    /* height: 100vh; */
+/* .heritage{
+    height: 100vh;
     place-content: center;
     align-items: center;
-}
+} */
 
 .heritage-content{
     display: flex;
-    width: 587px;
+    /* width: 587px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 26px;
 }
 .heritage img{
-    width: 588px;
-    height: 346px;
+    /* width: 588px; */
+    /* height: 346px; */
     border-radius: 8px;
 }
 
 /* ============achievement=================== */
 
-.achievement-img{
+/* .achievement-img{
     display: flex;
     align-items: center;
     gap: 40px;
@@ -455,7 +475,11 @@ strong{
     width: 616px;
     height: 364px;
     border-radius: 8px;
-}
+} */
+
+
+/* =========SCH======= */
+
 
 /* ================facilities=============== */
 
