@@ -1,0 +1,93 @@
+@media (max-width: 1025px) {
+    section{
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+    }
+}
+@media (max-width: 991px) {
+    section{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .right_header img{
+        display: none;
+    }
+    .hero-section{
+        text-align: center;
+    }
+    .line{
+        display: none;
+    }
+    .hero-intro p{
+        width:75%;
+        /* display: none; */
+    }
+    .hero-intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-space{
+        margin-top: 1rem;
+    }
+    .welcome-card h4{
+        margin-top: 16px;
+        font-size: larger;
+    }
+    .welcome-card .author{
+        display: none !important;
+    }
+    .welcome-card .btn{
+        display: none;
+        padding: 8px !important;
+    }
+    .welcome-card{
+        padding: 8px 8px 14px 8px !important;
+        border-radius: 16px !important;
+    }
+    .welcome-card p{
+        font-size: 14px;
+    }
+    .welcome-card img{
+        height: 150px !important;
+        border-radius: 8px !important;
+    }
+
+    .welcome-card-sm{
+        padding: 8px 8px 14px 8px !important;
+        gap: 21px;
+        border-radius: 16px !important;
+    }
+    .welcome-card-sm img{
+        border-radius: 8px !important;
+        height: 150px !important;
+    }
+    .welcome-card-sm .btn{
+        display: none;
+    }
+    .welcome-card-sm p{
+        font-size: 14px;
+    }
+    .welcome-card-sm h5{
+        font-size: larger;
+    }
+    .history-img{
+        display:none;
+    }
+
+}
+
+@media (max-width: 769px) {
+    .carousel{
+        width: 100% !important;
+        border-radius: 0px;
+    }
+    .carousel-inner img{
+        height: 200px ;
+        border-radius: 0px;
+    }
+    .carousel-inner p{
+        font-size: 14px;
+    }
+    
+}

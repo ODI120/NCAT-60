@@ -200,17 +200,18 @@ nav .nav-link{
 }
 .hero-section{
     margin-top: 4rem;
-    background-image: url(/image/bakgimg.png);
+    /* background-image: url(/image/bakgimg.png); */
+    background-image: url(/NCAT/ncat_12.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.intro{
-    /* display: flex; */
+/* .intro{
+    display: flex;
     width: 302px;
-    /* flex-direction: column; */
-    /* align-items: flex-start; */
-}
+    flex-direction: column;
+    align-items: flex-start;
+} */
 .intro h4{
     color: var(--color-yellow);
     font-family: "Segoe UI";
@@ -255,7 +256,7 @@ nav .nav-link{
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px; /* 156.25% */
+    line-height: 25px; 
     letter-spacing: 0.25px;
 }
 .hero-intro a{
@@ -498,5 +499,37 @@ strong{
     /* gap: 22px; */
 }
 .facilities img{
+    border-radius: 8px;
+}
+
+/* ===========Alumni========= */
+.alumni-cintent img{
+    border-radius: 16px;
+}
+.alumni-update a{
+    text-decoration: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-shrink: 0;
+    text-justify: start;
+    width: 150px;
+}
+
+/* ===========carousel========= */
+
+.carousel{
+    width: 65%;
+    border-radius: 16px;
+}
+.carousel-div{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.carousel-inner img{
+    border-radius: 20px;
+}
+
+/* ========partnership========= */
+.partnership img{
     border-radius: 8px;
 }
