@@ -75,7 +75,7 @@ body{
 }
 
 p{
-    color: var(--color-black) !important;
+    color: var(--color-black) ;
     font-style: normal;
     font-size: 16px;
     font-weight: 400 ;
@@ -158,6 +158,34 @@ nav .nav-link{
     margin: 0%;
     padding: 0.7rem;
 }
+/* =========================================== */
+
+._hero img{
+    width: 400px;
+}
+
+._hero{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin: auto;
+    text-align: center;
+}
+.icao{
+    width: 133px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 2px;
+}
+.ncaa{
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 2px;
+}
+.component-img img{
+    border-radius: 32px;
+}
+
 /* =====================RESPONSIVE============================= */
 @media (max-width:769px)  {
     .nav-link{
@@ -198,13 +226,20 @@ nav .nav-link{
     background-color: var(--color-yellow);
     margin-bottom: 3rem;
 }
-.hero-section{
+/* .header-content{
     margin-top: 4rem;
+} */
+.hero-section{
+    /* height: 100vh; */
+    background: linear-gradient(180deg, #008DD2 0%, rgba(255, 255, 255, 0.00) 50%);
+    /* margin-top: 4rem; */
     /* background-image: url(/image/bakgimg.png); */
-    background-image: url(/NCAT/ncat_12.jpg);
+    /* background-image: url(/NCAT/ncat_12.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: var(--color-black); */
+    background-blend-mode: soft-light;
 }
 /* .intro{
     display: flex;
@@ -252,12 +287,13 @@ nav .nav-link{
     /* width: 80%; */
 }
 .hero-intro p{
-    color: var(--color-black);
+    color: var(--color-black) ;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px; 
     letter-spacing: 0.25px;
+
 }
 .hero-intro a{
     display: flex;
@@ -326,7 +362,7 @@ nav .nav-link{
 }
 .welcome-card img{
     /* width: 285px; */
-    height: auto;
+    height: 320px;
     border-radius: 16px;
 }
 .welcome-card .card-content .btn{
@@ -517,6 +553,11 @@ strong{
 
 /* ===========carousel========= */
 
+.carousel-inner{
+    background-color: var(--color-white);
+    padding: 16px;
+    border-radius: 16px;
+}
 .carousel{
     width: 65%;
     border-radius: 16px;
@@ -533,3 +574,6 @@ strong{
 .partnership img{
     border-radius: 8px;
 }
+
+/* ================footer===================== */
+
