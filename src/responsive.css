@@ -34,6 +34,12 @@
         margin-top: 16px;
         font-size: larger;
     }
+    .welcome-card br{
+        display: none;
+    }
+    .welcome-card span{
+        display: none;
+    }
     .welcome-card .author{
         display: none !important;
     }
@@ -75,7 +81,11 @@
         display:none;
     }
 
+    .svg-long{
+        max-width: 75%;
+    }
 }
+
 
 @media (max-width: 769px) {
     .carousel{
@@ -89,5 +99,41 @@
     .carousel-inner p{
         font-size: 14px;
     }
+    .svg-long{
+        width: 80%;
+    }
+    ._hero img{
+        width: 300px !important;
+    }
+    ._hero {
+        padding-bottom:2rem !important;
+    }
+    .hero-section h1{
+        font-size: 22px ;
+    }
+    .ncat_inter{
+        flex-direction: column;
+    }
+    .svg-line{
+        display: none ;
+    }
+    .ncat_inter_img{
+        margin-top: 16px;
+    }
+    .component-img img{
+        border-radius: 16px !important;
+    }
     
+}
+@media (max-width: 600px) {
+    .hero-section h1{
+        font-size: 18px ;
+    }
+    ._hero {
+        padding-top: 2rem !important;
+        padding-bottom:1rem !important;
+    }
+    .component-img img{
+        border-radius: 8px !important;
+    }
 }
