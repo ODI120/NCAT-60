@@ -189,6 +189,7 @@ nav .nav-link{
 }
 .component-img img{
     border-radius: 32px;
+    margin-top: 2.5rem;
 }
 .svg_long{
     width: 953px;
@@ -249,6 +250,7 @@ nav .nav-link{
     /* background-color: var(--color-black); */
     background-blend-mode: soft-light;
 }
+
 /* .intro{
     display: flex;
     width: 302px;
@@ -350,7 +352,10 @@ nav .nav-link{
 
 /* =======welcome section======= */
 
-.welcome{
+.dnt-display{
+    display: none;
+}
+.welcome{ 
     /* height: 100vh; */
     place-content: center;
 }
