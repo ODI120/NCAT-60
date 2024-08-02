@@ -77,9 +77,9 @@
     .welcome-card-sm h5{
         font-size: larger;
     }
-    .history-img{
+    /* .history-img{
         display:none;
-    }
+    } */
 
     .svg-long{
         max-width: 75%;

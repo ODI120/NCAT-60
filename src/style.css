@@ -438,9 +438,8 @@ nav .nav-link{
     place-content: center;
 }
 .history img{
-    height: auto;
-    width: 400px;
     place-content: center;
+    border-radius: 8px;
 }
 .history-content{
     display: flex;
@@ -478,7 +477,7 @@ strong{
 .legacy-img img{
     /* height: 472.947px; */
     /* align-self: stretch; */
-    border-radius: 23.382px 23.382px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .legacy-img .minister{
@@ -489,7 +488,7 @@ strong{
     gap: 10.628px;
     /* align-self: stretch; */
     background-color: var(--color-white);
-    border-radius: 0px 0px 23.382px 23.382px;
+    border-radius: 0px 0px 8px 8px;
 }
 
 
