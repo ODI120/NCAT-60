@@ -84,6 +84,12 @@
     .svg-long{
         max-width: 75%;
     }
+    .not_invisible{
+        display: none !important;
+    }
+    .not_visible{
+        display: block !important;
+    }
 }
 
 
@@ -142,12 +148,17 @@
     }
     .welcome-card h4{
         margin-bottom: 18px !important;
-    }
-    
+    } 
 }
 @media (max-width: 767px) {
     .dnt-display{
         display: block !important;
+    }
+    ._visible{
+        display: block !important;
+    }
+    ._invisible{
+        display: none !important;
     }
 }
 @media (max-width: 600px) {
@@ -235,5 +246,10 @@
 
 }
 @media (max-width: 425px) {
-    
+    .heritage-content, .legacy_content, .history-content{
+        gap: 8px !important;
+    }
+    .header{
+        padding: 0px !important;
+    }
 }

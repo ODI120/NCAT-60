@@ -87,7 +87,12 @@ h6{
     color: var(--color-black) !important;
     margin: 0px !important;
 }
-
+._visible{
+    display: none ;
+}
+.not_visible{
+    display: none;
+}
 /* ==============Navbar================= */
 
 .logo{
@@ -501,7 +506,7 @@ strong{
     /* width: 587px; */
     flex-direction: column;
     align-items: flex-start;
-    gap: 26px;
+    gap: 18px;
 }
 .heritage img{
     /* width: 588px; */
