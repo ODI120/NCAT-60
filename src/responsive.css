@@ -214,10 +214,26 @@
     }
 
     .col-xsm{
-        width: 256px !important;
+        width: 250px !important;
     }
-    .justify-content-center{
+    /* .justify-content-center{
         display: flex !important;
-        /* justify-content: center !important; */
+        justify-content: center !important;
+    } */
+}
+@media (max-width: 563px) {
+    section{
+        margin-top: 10rem ;
+        margin-bottom: 10rem;
+        padding-left: 14px !important;
+        padding-right: 14px !important;
     }
+
+    .col-xsm{
+        width: 400px !important;
+    }
+
+}
+@media (max-width: 425px) {
+    
 }
