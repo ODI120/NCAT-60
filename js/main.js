@@ -12,3 +12,16 @@ toggleBtn.onclick = function() {
     ? 'bi bi-x'
     : 'bi bi-list'
 }
+
+// ============infinite scroll=====================
+
+const scrollContainer = document.querySelector('.scroll-content');
+const items = scrollContainer.children;
+const itemsCount = items.length;
+
+// Clone the items to create the seamless infinite effect
+for (let i = 0; i < itemsCount; i++) {
+    const clone = items[i].cloneNode(true);
+    scrollContainer.appendChild(clone);
+}
+
