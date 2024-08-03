@@ -676,3 +676,43 @@ strong{
 
 /* ================footer===================== */
 
+.testimonials-section {
+    padding: 2rem 0;
+}
+
+.testimonial-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+}
+
+.testimonial-card .card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 2000px ;
+}
+
+.testimonial-card .card-body {
+    padding: 1.5rem;
+}
+
+.testimonial-card .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-card .card-subtitle {
+    font-size: 1rem;
+    color: #ffb800;
+}
+
+.testimonial-card .card-text {
+    font-size: 0.875rem;
+    color: #333;
+    padding-left: 1rem;
+    padding-right: 1rem;
+} 
+
