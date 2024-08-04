@@ -172,6 +172,15 @@
     .component-img img{
         border-radius: 8px !important;
     }
+    .testimonial-card .card-text {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+        font-size: smaller !important;
+        line-height: 20px !important;
+    } 
+    .testimonial-card .card-body {
+        padding: 0px !important;
+    }
 }
 @media (max-width: 575px) {
     ._hero img{

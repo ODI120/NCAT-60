@@ -44,6 +44,7 @@ img{
     --color-blue:#008DD2;
     --color-white:#fff;
     --color-black:#212121;
+    --color-text:#555;
     --color-yellow:#F5A80A;
     --color-outline:#5F63688C;
 }
@@ -75,7 +76,7 @@ body{
 }
 
 p{
-    color: var(--color-black) ;
+    color: var(--color-text) ;
     font-style: normal;
     font-size: 16px;
     font-weight: 400 ;
@@ -248,12 +249,12 @@ nav .nav-link{
     background: linear-gradient(180deg, #008DD2 0%, rgba(255, 255, 255, 0.00) 50%);
     /* margin-top: 4rem; */
     /* background-image: url(/image/bakgimg.png); */
-    /* background-image: url(/NCAT/ncat_12.jpg); */
+    /* background-image: url(/NCAT/magnus.jpg); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: var(--color-black); */
-    background-blend-mode: soft-light;
+    background-blend-mode: color;
 }
 
 /* .intro{
@@ -603,10 +604,10 @@ strong{
     width: 65%;
     border-radius: 16px;
 }
-.carousel-div{
+/* .carousel-div{
     padding-left: 2rem;
     padding-right: 2rem;
-}
+} */
 .carousel-inner img{
     border-radius: 20px;
 }
@@ -639,7 +640,7 @@ strong{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: white;
+    color: var(--color-white);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -656,7 +657,7 @@ strong{
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: var(--color-white);
     width: 100%;
     text-align: left;
     padding: 10px;
@@ -674,7 +675,7 @@ strong{
 }
 
 
-/* ================footer===================== */
+/* ================new testimonial===================== */
 
 .testimonials-section {
     padding: 2rem 0;
@@ -706,13 +707,102 @@ strong{
 
 .testimonial-card .card-subtitle {
     font-size: 1rem;
-    color: #ffb800;
+    color: var(--color-yellow);
 }
 
 .testimonial-card .card-text {
     font-size: 0.875rem;
-    color: #333;
+    color: var(--color-text);
     padding-left: 1rem;
     padding-right: 1rem;
+    
 } 
+.card{
+    border: 0px !important;
+}
 
+/* =========footer============ */
+
+.footer-section {
+    background: var(--color-white);
+    padding: 40px 0;
+    color: var(--color-text);
+}
+
+.footer-section h5 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form {
+    font-size: 0.9rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li i {
+    margin-right: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.footer-section ul li a:hover {
+    color: var(--color-blue);
+}
+
+.footer-section .social-icons {
+    margin-top: 10px;
+}
+
+.footer-section .social-icons .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer-section .social-icons .social-icon:hover {
+    color: var(--color-blue);
+}
+
+.footer-section .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 0;
+}
+
+.footer-section .btn-primary {
+    background-color: var(--color-blue);
+    border: none;
+    border-radius: 0;
+}
+
+.footer-section .btn-primary:hover {
+    background-color: var(--color-blue);
+}
+
+.footer-section .container .row + .row {
+    margin-top: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section .container .row > div {
+        margin-bottom: 20px;
+    }
+}
