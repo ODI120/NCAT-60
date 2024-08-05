@@ -4,7 +4,7 @@
 
 
 *{
-    padding: 0;
+    /* padding: 0; */
     margin: 0;
     list-style: none;
     text-decoration: none;
@@ -244,7 +244,7 @@ nav .nav-link{
 /* .header-content{
     margin-top: 4rem;
 } */
-.hero-section{
+.hero_section{
     /* height: 100vh; */
     background: linear-gradient(180deg, #008DD2 0%, rgba(255, 255, 255, 0.00) 50%);
     /* margin-top: 4rem; */
@@ -805,4 +805,264 @@ strong{
     .footer-section .container .row > div {
         margin-bottom: 20px;
     }
+}
+
+/* ============content details========== */
+
+
+.hero-section {
+    background: url('/NCAT/magnus.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay;
+    background-color: var(--color-black);
+    height: 50vh;
+    color: var(--color-white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--color-background) !important;
+}
+
+/* .content-page {
+    padding: 40px 0;
+} */
+
+.content-header {
+    margin-bottom: 30px;
+}
+.content-body ol li{
+    list-style: block !important;
+}
+.content-body ul li{
+    list-style: square !important;
+    color: var(--color-text);
+}
+
+.content-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.content-header p {
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+
+.content-body img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-body p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+.fixed-sidebar {
+    position: sticky;
+    top: 20px;
+    background: var(--color-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-sidebar h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.fixed-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fixed-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.fixed-sidebar ul li a {
+    text-decoration: none;
+    color: var(--color-blue);
+    transition: color 0.3s;
+}
+
+.fixed-sidebar ul li a:hover {
+    text-decoration: underline;
+    color: var(--color-blue);
+}
+
+.fixed-sidebar ul li i {
+    margin-right: 10px;
+    color: var(--color-blue);
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--color-background);
+}
+
+.mobile-sidebar {
+    display: none;
+    background: var(--color-background);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-sidebar.active {
+    display: block;
+}
+
+.mobile-sidebar h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.mobile-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.mobile-sidebar ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    transition: color 0.3s;
+}
+
+.mobile-sidebar ul li a:hover {
+    text-decoration: underline;
+    color: var(--color-blue);
+}
+
+.mobile-sidebar ul li i {
+    margin-right: 10px;
+    color: var(--color-blue);
+}
+
+@media (max-width: 991.98px) {
+    .fixed-sidebar {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+/* ===============schools============= */
+
+.hero--section {
+    background: url('/ncat/AIRFIELD\ SIGN\ &\ MARKINGS.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay;
+    background-color: var(--color-black);
+    height: 50vh;
+    color: var(--color-white);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero--section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero--section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero--section .btn {
+    font-size: 1.1rem;
+    padding: 10px 30px;
+}
+
+.features-section {
+    /* padding: 60px 0; */
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.feature-card {
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.feature-card .card-body {
+    padding: 20px;
+}
+
+.feature-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.feature-card .card-text {
+    font-size: 1rem;
+    color: var(--color-text);
+    margin-bottom: 15px;
+}
+
+.feature-card .btn {
+    font-size: 1rem;
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .hero-section h1 {
+    font-size: 2rem;
+}
 }
