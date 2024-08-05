@@ -1003,12 +1003,13 @@ strong{
 .hero--section h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 .hero--section p {
     font-size: 1.2rem;
     margin-bottom: 40px;
+    color: var(--color-white) !important;
 }
 
 .hero--section .btn {
@@ -1030,8 +1031,11 @@ strong{
 .feature-card {
     border: none;
     margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px !important;
+    background-color: var(--color-background) !important;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border: 1px solid var(--color-outline) !important;
+    overflow: hidden;
 }
 
 .feature-card img {
@@ -1062,7 +1066,7 @@ strong{
 
 
 @media screen and (max-width: 425px) {
-    .hero-section h1 {
-    font-size: 2rem;
+    .hero--section h1 {
+    font-size: 2rem ;
 }
 }
