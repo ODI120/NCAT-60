@@ -25,3 +25,21 @@ for (let i = 0; i < itemsCount; i++) {
     scrollContainer.appendChild(clone);
 }
 
+// ==============navbar addEventListener.==========
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.getElementById('navbar');
+    let lastScrollTop = 0;
+  
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop && scrollTop > 200) {
+        navbar.classList.add('visible');
+      } else {
+        navbar.classList.remove('visible');
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+    });
+});
+  
+
+

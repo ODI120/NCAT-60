@@ -69,7 +69,7 @@
         height: 150px !important;
     }
     .welcome-card-sm .btn{
-        display: none;
+        width: 100%;
     }
     .welcome-card-sm p{
         font-size: 14px;
@@ -149,6 +149,7 @@
     .welcome-card h4{
         margin-bottom: 18px !important;
     } 
+
 }
 @media (max-width: 767px) {
     .dnt-display{

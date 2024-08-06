@@ -9,14 +9,45 @@
     <link rel="stylesheet" href="src/bootstrap.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <title>ncat @ 60</title>
     <link rel="shortcut icon" href="image/favicon.ico.png" type="image/x-icon">
 </head>
 <body>
 
-    <header class="hero_section text-center">
+    
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top hidden">
+        <div class="container">
+            <div class="logo">
+                <img src="image/favicon.ico.png" alt="">
+                <a class="navbar-brand" href="#" id="logo">Nigerian College of <br>Aviation Technology</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" id="mobile-menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <header class="hero_section text-center">
 
         <div class="container-xl common expanded _hero">
             <img src="NCAT/logo.png" class=""  alt="">
@@ -244,7 +275,7 @@
                         <div class="card-content">
                             <h5>A.T.E School.</h5>
                             <p>Telecommunication Engineering School offers a specialized program ..</p>
-                            <a href="Schools.html" class="btn">Learn More</a>
+                            <a href="Ates.html" class="btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -253,8 +284,8 @@
                         <img src="image/pilot.jpeg" alt=""> 
                         <div class="card-content">
                             <h5>Flying school</h5>
-                            <p>Discover the cutting-edge facilities that support aviation training! look no futher</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <p>Discover the cutting-edge facilities that support aviation training!</p>
+                            <a href="flying.html" class="btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -264,7 +295,7 @@
                         <div class="card-content">
                             <h5>A.M.E School.</h5>
                             <p>Discover the cutting-edge facilities that support aviation training.</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="Ames.html" class="btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -274,7 +305,7 @@
                         <div class="card-content">
                             <h5>Aviation Mgnt schl.</h5>
                             <p>Are you ready to take flight in the exciting world of aviation management?</p>
-                            <a href="#" class="btn">Learn More</a>
+                            <a href="Ames.html" class="btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -284,7 +315,7 @@
                         <div class="card-content">
                             <h5>A.E.T School.</h5>
                             <p>Discover the cutting-edge facilities that support aviation training.</p>
-                            <a href="Schools.html" class="btn">Learn More</a>
+                            <a href="Aet.html" class="btn">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -302,6 +333,88 @@
             
         </div>
     </section>
+
+    
+    
+    <section>
+        <div class="container-xl text-center  score_card">
+            <div class="header pt-4">
+                <h2>Score card 2019-2023 Training Activities</h2>
+                <p>(Completed Courses)</p>
+            </div>
+            <!-- <div class="row common">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div>
+                        <h5>Year</h5>
+                        <h2>2019-2023</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div>
+                        <h5>NO OF COURSES COMPLETED</h5>
+                        <h2>265</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div>
+                        <h5>NO OF GRADUATES</h5>
+                        <h2>3,459</h2>
+                    </div>
+                </div>
+            </div> -->
+
+            <table class="table table-secondary table-hover table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">S/N</th>
+                    <th scope="col">YEAR</th>
+                    <th scope="col">NO OF COURSES COMPLETED</th>
+                    <th scope="col">NO OF GRADUATES</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>2019</td>
+                    <td>81</td>
+                    <td>1,068</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>2020</td>
+                    <td>33</td>
+                    <td>402</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td >2021</td>
+                    <td >69</td>
+                    <td>869</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td >2022</td>
+                    <td >54</td>
+                    <td>757</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td >2023</td>
+                    <td >28</td>
+                    <td>363</td>
+                  </tr>
+                  <tr class="total">
+                    <th scope="row">6</th>
+                    <td >TOTAL</td>
+                    <td >265</td>
+                    <td>3,459</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </section>
+
+    
 
     <section>
         <div class="container-xl expanded">
@@ -599,31 +712,31 @@
                 <div class="scroll-content">
                     <div class="item">
                         <img src="image/NAMA.jpeg" alt="Image 1">
-                        <div class="titles">Title 1</div>
+                        <!-- <div class="titles">Title 1</div> -->
                     </div>
                     <div class="item">
                         <img src="image/NCAA.jpeg" alt="Image 2">
-                        <div class="titles">Title 2</div>
+                        <!-- <div class="titles">Title 2</div> -->
                     </div>
                     <div class="item">
                         <img src="image/FAAN.jpeg" alt="Image 3">
-                        <div class="titles">Title 3</div>
+                        <!-- <div class="titles">Title 3</div> -->
                     </div>
                     <div class="item">
                         <img src="image/ICAO.png" alt="Image 4">
-                        <div class="titles">Title 4</div>
+                        <!-- <div class="titles">Title 4</div> -->
                     </div>
                     <div class="item">
                         <img src="image/NDA.png" alt="Image 5">
-                        <div class="titles">Title 5</div>
+                        <!-- <div class="titles">Title 5</div> -->
                     </div>
                     <div class="item">
                         <img src="image/Airforce.png" alt="Image 6">
-                        <div class="titles">Title 6</div>
+                        <!-- <div class="titles">Title 6</div> -->
                     </div>
                     <div class="item">
                         <img src="image/NIMET.png" alt="Image 7">
-                        <div class="titles">Title 7</div>
+                        <!-- <div class="titles">Title 7</div> -->
                     </div>
                     
                 </div>
@@ -703,9 +816,9 @@
             const end = start + itemsPerPage;
             images.forEach((img, index) => {
                 if (index >= start && index < end) {
-                    img.classList.remove('hidden');
+                    img.classList.remove('_hidden');
                 } else {
-                    img.classList.add('hidden');
+                    img.classList.add('_hidden');
                 }
             });
             document.getElementById('currentPage').textContent = page;
@@ -728,8 +841,10 @@
         // Initialize the first page
         showPage(currentPage);
     </script>
-    
-   <script src="js/main.js"></script>
-   <script src="js/bootstrap.js"></script>
+   
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
