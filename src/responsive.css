@@ -254,6 +254,11 @@
         width: 400px !important;
     }
 
+    .school div .row{
+        /* display: flex !important;
+        flex-direction: row !important; */
+        flex-wrap: nowrap !important;
+    }
 }
 @media (max-width: 425px) {
     .heritage-content, .legacy_content, .history-content{

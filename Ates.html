@@ -15,10 +15,43 @@
 </head>
 <body>
 
+     <!-- Navigation Bar -->
+     <nav id="navbar" class="navbar navbar-expand-lg fixed-top hidden">
+        <div class="container nav">
+            <div class="logo">
+                <img src="image/favicon.ico.png" alt="">
+                <a class="navbar-brand" href="#" id="logo">Nigerian College of <br>Aviation Technology</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" id="mobile-menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ates.html">ATE School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ame.html">AME Schools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ams.html">AMS School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flying.html">Flying School</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <header class="hero--section">
-        <h1>Aeronautical Telecommunication School</h1>
-        <p>Your gateway to world-class aviation training</p>
+        <h1><blockquote>Aeronautical</blockquote> Telecommunication School</h1>
+        <p><em>Your gateway to world-class aviation training</em></p>
         <!-- <a href="#features" class="btn btn-primary">Join today</a> -->
     </header>
 
@@ -130,9 +163,32 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.getElementById('navbar');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('navbarNav');
+            const logo = document.getElementById('logo');
+            let lastScrollTop = 0;
+        
+            window.addEventListener('scroll', function() {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 200) {
+                navbar.classList.add('visible');
+            } else {
+                navbar.classList.remove('visible');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+            });
+        
+            mobileMenu.addEventListener('click', function() {
+            navLinks.classList.toggle('show');
+            mobileMenu.querySelector('.navbar-toggler-icon').classList.toggle('active');
+            logo.classList.toggle('hidden');
+            });
+        });
+    </script>
 
     <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>

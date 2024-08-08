@@ -18,7 +18,7 @@ for (let i = 0; i < itemsCount; i++) {
 //     const mobileMenu = document.getElementById('mobile-menu');
 //     const navLinks = document.getElementById('nav-links');
 //     let lastScrollTop = 0;
-  
+
 //     window.addEventListener('scroll', function() {
 //       let scrollTop = window.scrollY || document.documentElement.scrollTop;
 //       if (scrollTop > lastScrollTop && scrollTop > 200) {
@@ -28,7 +28,7 @@ for (let i = 0; i < itemsCount; i++) {
 //       }
 //       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
 //     });
-  
+
 //     mobileMenu.addEventListener('click', function() {
 //       navLinks.classList.toggle('active');
 //     });
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
       mobileMenu.querySelector('.navbar-toggler-icon').classList.toggle('active');
       logo.classList.toggle('hidden');
     });
-  });
+});
   
 
   

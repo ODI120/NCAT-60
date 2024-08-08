@@ -5,47 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="src/responsive.css">
     <link rel="stylesheet" href="src/style.css">
-
-    <title>Our history</title>
-    <link rel="shortcut icon" href="image/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/bootstrap.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+    <title>Our history</title>
+    <link rel="shortcut icon" href="image/favicon.ico.png" type="image/x-icon">
+
 </head>
 <body>
 
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top hidden">
+        <div class="container nav">
+            <div class="logo">
+                <img src="image/favicon.ico.png" alt="">
+                <a class="navbar-brand" href="#" id="logo">Nigerian College of <br>Aviation Technology</a>
+            </div>
+            
+            <button class="navbar-toggler" type="button" id="mobile-menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ates.html">ATE School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ame.html">AME Schools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Ams.html">AMS School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flying.html">Flying School</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <header class="hero-section">
-        <h1>OUR RICH HISTORY</h1>
-        <p class="text-dark">Celebrating 60 years of Excellence in Aviation Education</p>
+        <h1><blockquote>OUR</blockquote> RICH HISTORY</h1>
+        <p class="text-dark"> <em>Celebrating 60 years of Excellence in Aviation Education</em></p>
     </header>
 
     <div class="container content-page">
-        <div class="hamburger-menu" id="hamburger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-
-        <div class="mobile-sidebar" id="mobile-sidebar">
-            <h5>Related Links</h5>
-            <ul>
-                <li><a href="index.html"><i class="fa fa-link"></i>Home</a></li>
-                <li><a href="History.html"><i class="fa fa-link"></i>Our history</a></li>
-                <li><a href="#"><i class="fa fa-link"></i>Discover our legacy</a></li>
-                <li><a href="#"><i class="fa fa-link"></i>Explore the heritage of  NCAT</a></li>
-                <li><a href="Schools.html"><i class="fa fa-link"></i>ATE school</a></li>
-                <li><a href="Schools.html"><i class="fa fa-link"></i>AME school</a></li>
-                <li><a href="Schools.html"><i class="fa fa-link"></i>Flying school</a></li>
-                <li><a href="Schools.html"><i class="fa fa-link"></i>ATE school</a></li>
-            </ul>
-            <h5>Contact Us</h5>
-            <ul>
-                <li><i class="fa fa-map-marker-alt"></i>Zaria, Nigeria</li>
-                <li><i class="fa fa-phone"></i>+234 123 456 789</li>
-                <li><i class="fa fa-envelope"></i>info@ncat.edu.ng</li>
-            </ul>
-        </div>
 
         <div class="row cover">
             <div class="col-12 col-lg-8 order-2 order-lg-1">
@@ -53,24 +65,24 @@
                     <!-- <h6 class="mt-4">The Begining</h6> -->
                     <!-- <p>ncat @ 60 </p> -->
                 </div>
-                <div class="content-body">
+                <div class="content-body " id="history">
                     <img src="image/mgnt.png" alt="Image related to the content">
                     <h4>Our History</h4>
                     <p>The Nigerian College of Aviation Technology (NCAT) is an NCAA Approved Training Organization (ATO) located in Zaria, Kaduna State. 
                         The College was established in 1964 by an Act of Parliament, which has now been repealed and replaced with NCAT Act 2022. The Act grants it Tertiary status and NCAT will celebrate its Diamond Jubilee (60 years of Aviation training) in the year 2024
                         </p>
                     <br>
-                    <h4>Our Vision</h4>
+                    <h4 id="vision">Our Vision</h4>
                     <!-- <img src="image/icaoplus.png" alt="Image related to the content"> -->
                     <p>The VISION of the College is “To maintain the prestigious position of the foremost aviation training institution in Africa, and be amongst the best in the world“.
                     </p>
                     <br>
-                    <h4>Our Mission</h4>
+                    <h4 id="mission">Our Mission</h4>
                     <!-- <img src="image/icaoplus.png" alt="Image related to the content"> -->
                     <p>The MISSION STATEMENT of the College is “To consistently provide the aviation industry with professionals and other personnel through training and related services for safe air transportation in accordance with International standards“.
                     </p>
                     <br>
-                    <h4>Our Mandate</h4>
+                    <h4 id="mandate">Our Mandate</h4>
                     <!-- <img src="image/icaoplus.png" alt="Image related to the content"> -->
                     <p>The MANDATE of the College is 
                         Training of pilots, air traffic controllers, aircraft maintenance engineers, Aeronautical Telecommunications Engineering personnel, and several other aviation specialists for the aviation industry
@@ -78,7 +90,7 @@
                         Conducting research in Aviation Development
                     </p>
                     <br>
-                    <h4>Certifications/Accreditations/ Memberships </h4>
+                    <h4 id="certification">Certifications/Accreditations/ Memberships </h4>
                     <img src="NCAT/ICAO TRAINAIR Plus.jpg" alt="Image related to the content">
                     
                     <ol>
@@ -109,7 +121,7 @@
                         </li>
                     </ol>
                     <br>
-                    <h4>Comprehensive Training Programs</h4>
+                    <h4 id="Training">Comprehensive Training Programs</h4>
                     <!-- <img src="image/icaoplus.png" alt="Image related to the content"> -->
                     <p>
                         NCAT offers a variety of training programs that cater to different sectors of the aviation industry, including:
@@ -128,7 +140,7 @@
                         <li><b>Air Traffic Control:</b> Comprehensive training in managing air traffic to ensure the safe and efficient movement of aircraft.</li>
                     </ul>
                     <br>
-                    <h4>SIX (6) TRAINING SCHOOLS
+                    <h4 id="Schools">SIX (6) TRAINING SCHOOLS
                     </h4>
                     <img src="image/icaoplus.png" alt="Image related to the content">
                     <ul>
@@ -161,7 +173,7 @@
                         The certification process at NCAT includes rigorous assessments to ensure that students have mastered the required skills and knowledge. These assessments are designed to test both theoretical understanding and practical competence. Only those who meet the high standards set by the college are awarded certification.
                     </p>
                     <br>
-                    <h4>Awards/recorgnition</h4>
+                    <h4 id="Awards">Awards/recorgnition</h4>
                     <ol>
                         <li><strong>ICAO GLOBAL Aviation Training Awards</strong>
                             <ul>
@@ -211,10 +223,14 @@
                 <div class="fixed-sidebar">
                     <h5>Related Links</h5>
                     <ul>
-                        <li><a href="index.html"><i class="fa fa-link"></i>Home</a></li>
-                        <li><a href="History.html"><i class="fa fa-link"></i>Our history</a></li>
-                        <li><a href="#"><i class="fa fa-link"></i>Discover our legacy</a></li>
-                        <li><a href="#"><i class="fa fa-link"></i>Explore the heritage of  NCAT</a></li>
+                        <li><a href="#history"><i class="bi bi-airplane"></i>Our History</a></li>
+                        <li><a href="#vision"><i class="bi bi-airplane"></i>Our Vision</a></li>
+                        <li><a href="#mission"><i class="bi bi-airplane"></i>Our Mission</a></li>
+                        <li><a href="#mandate"><i class="bi bi-airplane"></i>Our Mandate</a></li>
+                        <li><a href="#certification"><i class="bi bi-airplane"></i>Certifications</a></li>
+                        <li><a href="#Training"><i class="bi bi-airplane"></i>Training programs</a></li>
+                        <li><a href="#Schools"><i class="bi bi-airplane"></i>Schools</a></li>
+                        <li><a href="#Awards"><i class="bi bi-airplane"></i></i>Awards and Recorgnition</a></li>
                     </ul>
                     <h5>Contact Us</h5>
                     <ul>
@@ -290,10 +306,34 @@
         });
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.getElementById('navbar');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('navbarNav');
+            const logo = document.getElementById('logo');
+            let lastScrollTop = 0;
+        
+            window.addEventListener('scroll', function() {
+            let scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 200) {
+                navbar.classList.add('visible');
+            } else {
+                navbar.classList.remove('visible');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
+            });
+        
+            mobileMenu.addEventListener('click', function() {
+            navLinks.classList.toggle('show');
+            mobileMenu.querySelector('.navbar-toggler-icon').classList.toggle('active');
+            logo.classList.toggle('hidden');
+            });
+        });
+    </script>
 
+
+    <!-- <script src="js/script.js"></script> -->
     <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>

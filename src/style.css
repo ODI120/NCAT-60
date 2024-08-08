@@ -23,7 +23,9 @@
         padding: 0px 7%;
     }
 }
-
+blockquote{
+    color: var(--color-yellow);
+}
 section{
     margin-top: 10rem ;
     margin-bottom: 10rem;
@@ -104,6 +106,7 @@ h6{
 .navbar{
     background-color: var(--color-background);
     color: var(--color-black);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 .logo img{
     width: 50px;
@@ -117,25 +120,42 @@ h6{
 .logo a{
    font-size: 14px !important;
 }
+@media  (max-width: 425px) {
+    .logo a{
+        display: none;
+    }
+}
 
 #navbar.hidden {
     opacity: 0;
     transform: translateY(-100%);
     transition: opacity 0.3s, transform 0.3s;
-    transition: height 0.5s ease;
 }
   
 #navbar.visible {
     opacity: 1;
     transform: translateY(0);
-    transition: height 0.5s ease;
+    transition: height 0.5s ease !important;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
   
 .navbar-toggler-icon.active {
-    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M5 5L25 25M5 25L25 5"%3E%3C/path%3E%3C/svg%3E');
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba%280, 0, 0, 1%29" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M5 5L25 25M5 25L25 5"%3E%3C/path%3E%3C/svg%3E');
+}
+
+.navbar button span{
+    color: var(--color-black) !important;
+    font-size: x-large;
 }
   
-  
+.navbar a{
+    color: var(--color-black) !important;
+}
   
 /* =================new========================== */
 
@@ -460,14 +480,7 @@ strong{
 .alumni-cintent img{
     border-radius: 16px;
 }
-.alumni-update a{
-    text-decoration: none;
-    margin-top: 1rem;
-    display: flex;
-    flex-shrink: 0;
-    text-justify: start;
-    width: 150px;
-}
+
 
 ._hidden {
     display: none;
@@ -705,7 +718,7 @@ strong{
 .hero-section {
     background: url('/NCAT/magnus.jpg') no-repeat center center/cover;
     background-blend-mode: overlay;
-    background-color: var(--color-black);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 50vh;
     color: var(--color-white);
     text-align: center;
@@ -968,6 +981,7 @@ strong{
     background-color: #D6D6DE;
     padding: 0px !important;
     border-radius: 16px;
+    overflow-x: scroll;
 }
 @media screen and (max-width: 375px){
     .score_card h2 {
