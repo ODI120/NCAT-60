@@ -101,6 +101,13 @@ h6{
 .not_visible{
     display: none;
 }
+@media  (max-width: 563px) {
+    .welcome .all-row, .schools .all-row{
+        flex-wrap: nowrap!important;
+        overflow-x: scroll;
+        justify-content: flex-start !important;
+    }
+}
 /* ======nav bar====== */
 
 .navbar{
@@ -716,7 +723,7 @@ strong{
 
 
 .hero-section {
-    background: url('/NCAT/magnus.jpg') no-repeat center center/cover;
+    background: url('../NCAT/magnus.jpg') no-repeat center center/cover;
     background-blend-mode: overlay;
     background-color: rgba(0, 0, 0, 0.5);
     height: 50vh;
@@ -892,7 +899,7 @@ strong{
 /* ===============schools============= */
 
 .hero--section {
-    background: url('/ncat/AIRFIELD\ SIGN\ &\ MARKINGS.jpg') no-repeat center center/cover;
+    background: url('../NCAT/AIRFIELD\ SIGN\ &\ MARKINGS.jpg') no-repeat center center/cover;
     background-blend-mode: overlay;
     background-color: var(--color-black);
     height: 50vh;
@@ -943,7 +950,11 @@ strong{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-
+.feature-header{
+    margin-top: 4rem;
+    display: flex;
+    justify-items: flex-start;
+}
 .feature-card img {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -954,7 +965,7 @@ strong{
 }
 
 .feature-card .card-title {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     margin-bottom: 15px;
     font-weight: bold;
 }
