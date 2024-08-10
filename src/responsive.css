@@ -1,14 +1,9 @@
-@media (max-width: 1025px) {
-    section{
-        margin-top: 5rem !important;
-        margin-bottom: 5rem !important;
-    }
-}
+
 @media (max-width: 991px) {
-    section{
+    /* section{
         margin-top: 5rem;
         margin-bottom: 5rem;
-    }
+    } */
     .right_header img{
         display: none;
     }
