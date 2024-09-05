@@ -1063,11 +1063,11 @@ strong{
     flex-direction: column;
 }
 .past-img img{
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 8px 8px 8px 8px;
 }
 
 .past-img .name{
-    display: flex;
+    display: none;
     padding: 17.005px;
     justify-content: center;
     align-items: center;
