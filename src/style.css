@@ -330,6 +330,7 @@ nav ul{
     padding-right: 2rem;
 }
 .welcome-card{
+    height: 100%;
     display: flex;
     padding: 24px;
     align-items: center;
@@ -368,6 +369,7 @@ nav ul{
     border-radius: 555px;
 }
 .welcome-card-sm{
+    height: 100%;
     padding: 24px;
     gap: 21px;
     border-radius: 32px;
@@ -379,9 +381,10 @@ nav ul{
     margin-bottom: 16px;
     height: 157px;
 }
+
 .welcome-card-sm .btn{
     font-size: 12px;
-    padding: 6px 20px 6px 20px;
+    padding: 10px 20px 10px 20px;
     border-radius: 55px;
     background: var(--color-background);
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
@@ -597,8 +600,9 @@ strong{
     border: none;
     border-radius: 8px;
     overflow: hidden;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    max-width: 800px;
     text-align: center;
+    gap: 16px;
 }
 
 .testimonial-card .card-img-top {
@@ -623,11 +627,12 @@ strong{
 }
 
 .testimonial-card .card-text {
-    font-size: 0.875rem;
+    /* font-size: 0.875rem; */
     color: var(--color-text);
     padding-left: 1rem;
     padding-right: 1rem;
-    
+    font-style: italic;
+    font-size: 1.2rem;
 } 
 .card{
     border: 0px !important;
@@ -1017,13 +1022,13 @@ strong{
 .video-section .section-title {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #333;
+    /* color: var(--color-text); */
 }
 
 .video-wrapper {
     max-width: 800px;
     margin: 0 auto;
-    border: 5px solid #333; 
+    border: 5px solid var(--color-text); 
     border-radius: 10px; 
 }
 
@@ -1080,5 +1085,30 @@ strong{
     /* margin-top: 2rem; */
     overflow-x: scroll;
     display: flex;
+}
+
+/* ============traction============== */
+#tractions {
+    padding: 50px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-image: url(../dpt-img/bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.traction-item {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.traction-item h3 {
+    font-size: 3rem;
+    color: var(--color-white);
+    margin-bottom: 10px;
+}
+.traction-item p {
+    color: var(--color-white);
 }
 
