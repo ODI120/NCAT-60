@@ -6,31 +6,37 @@
 
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/responsive.css">
+    <link rel="stylesheet" href="src/bootstrap.css">
 
     <title>Aeronautical Telecommunication Engineering school detail</title>
     <link rel="shortcut icon" href="image/favicon.ico.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+   
 </head>
 <body>
 
      <!-- Navigation Bar -->
-     <nav id="navbar" class="navbar navbar-expand-lg fixed-top hidden">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top hidden">
         <div class="container nav">
+                       
             <div class="logo">
                 <img src="image/favicon.ico.png" alt="">
                 <a class="navbar-brand" href="#" id="logo">Nigerian College of <br>Aviation Technology</a>
             </div>
-            
-            <button class="navbar-toggler" type="button" id="mobile-menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class=""><i class="bi bi-list"></i></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="History.html">History</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="Ates.html">ATE School</a>
@@ -42,12 +48,14 @@
                         <a class="nav-link" href="Ams.html">AMS School</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="flying.html">Flying School</a>
+                        <a class="nav-link " href="flying.html">Flying School</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    
 
     <!-- Hero Section -->
     <header class="hero--section">
@@ -93,41 +101,41 @@
                     <h2>Departments in ATE School</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card feature-card">
-                            <img src="dpt-img/radar.jpg" class="card-img-top" alt="Program 1">
+                            <img src="ateschl/radar.jpg" class="card-img-top" alt="Program 1">
                             <div class="card-body">
                                 <h5 class="card-title">Radar Dept.</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card feature-card">
-                            <img src="dpt-img/nav-aid.jpg" class="card-img-top" alt="Program 1">
+                            <img src="ateschl/nav-aid.jpg" class="card-img-top" alt="Program 1">
                             <div class="card-body">
                                 <h5 class="card-title">Navigation Aid Dept.</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card feature-card">
-                            <img src="dpt-img/power.jpg" class="card-img-top" alt="Program 1">
+                            <img src="ateschl/power.jpg" class="card-img-top" alt="Program 1">
                             <div class="card-body">
                                 <h5 class="card-title">Power System Dept.</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card feature-card">
-                            <img src="dpt-img/cem sat.jpg" class="card-img-top" alt="Program 1">
+                            <img src="ateschl/cem sat.jpg" class="card-img-top" alt="Program 1">
                             <div class="card-body">
                                 <h5 class="card-title">Communication Equipment Mtce. Dept.</h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 col-lg-4">
                         <div class="card feature-card">
-                            <img src="dpt-img/gec-2.jpg" class="card-img-top" alt="Program 1">
+                            <img src="ateschl/gec-2.jpg" class="card-img-top" alt="Program 1">
                             <div class="card-body">
                                 <h5 class="card-title">General Electronice and computers Dept.</h5>
                             </div>
@@ -307,8 +315,10 @@
                 <div class="feature-header">
                     <h2>NBTE Programs</h2>
                 </div>
+
                 <div class="row">
-                    <div class="col-md-4">
+                    
+                    <div class="col-md-6 col-lg-4">
                         <div class="card feature-card">
                             <img src="NCAT/ncat-ate.jpg" class="card-img-top" alt="Program 1">
                             <div class="card-body">
@@ -318,7 +328,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="card feature-card">
                             <img src="NCAT/ncat-ate.jpg" class="card-img-top" alt="Program 2">
                             <div class="card-body">
@@ -347,11 +357,82 @@
                                 <a href="#" class="btn btn-general">Apply Now</a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="facilities common" id="Alumni">
+        <div class="container-xl expanded">
+            <div class="header">
+                <h2>Aeronautical Telecommunication <br> Engineering school facilities</h2>
+            </div>
+
+            <div class="row common">
+                <div class="col-sm-12 col-md-12 col-lg-12 facilities-contents">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12 facilities-img">
+                            <div class="row image-container common">
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/1.jpg" class="" alt=""> 
+                                </div>
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/2.jpg" class="image-fluid" alt="">
+                                </div>
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/3.jpg" class="image-fluid" alt="">
+                                </div>
+
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/4.jpg" alt="">
+                                </div>
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/6.jpg" alt="">
+                                </div>
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/7.jpg" alt="">
+                                </div>
+
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/ATE school view.jpg" class="image-fluid" alt="">
+                                </div>
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/Ate-33.jpg" class="image-fluid" alt="">
+                                </div>
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/ateschl.jpg" class="image-fluid" alt="">
+                                </div>
+
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="ateschl/atesrefg.jpg" class="image-fluid" alt="">
+                                </div>
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="image/R.jpg" class="image-fluid" alt="">
+                                </div>
+                                <div class="col-sm- col-md-4 col-lg-3 gy-2">
+                                    <img src="image/R.jpg" class="image-fluid" alt="">
+                                </div>
+                                <!-- Add more images as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination-controls">
+                <button id="prev" class="btn btn-general" onclick="prevPage()">Previous</button>
+                <div class="pagination-info">
+                    Page <span id="currentPage">1</span> of <span id="totalPages">1</span>
+                </div>
+                <button id="next" class="btn btn-general" onclick="nextPage()">Next</button>
+            </div>
+            
+        </div>
+    </section>
+
+    
+
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
@@ -391,10 +472,10 @@
                         <button type="submit" class="btn btn-primary">Subscribe</button>
                     </form>
                     <div class="social-icons mt-3">
-                        <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                        <a title="socials" class="social-icon"><i class="fa fa-facebook"></i></a>
+                        <a title="socials" class="social-icon"><i class="fa fa-twitter"></i></a>
+                        <a title="socials" class="social-icon"><i class="fa fa-instagram"></i></a>
+                        <a title="socials" class="social-icon"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -409,7 +490,7 @@
         </div>
     </footer>
 
-
+    <!-- navbar hide and show -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const navbar = document.getElementById('navbar');
@@ -436,7 +517,52 @@
         });
     </script>
 
+
+    <!-- SHOW SIX AT A TIME -->
+    <script>
+        const itemsPerPage = 6;
+        let currentPage = 1;
+        const imageContainer = document.querySelector('.image-container');
+        const images = Array.from(imageContainer.children);
+        const totalPages = Math.ceil(images.length / itemsPerPage);
+
+        document.getElementById('totalPages').textContent = totalPages;
+
+        function showPage(page) {
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            images.forEach((img, index) => {
+                if (index >= start && index < end) {
+                    img.classList.remove('_hidden');
+                } else {
+                    img.classList.add('_hidden');
+                }
+            });
+            document.getElementById('currentPage').textContent = page;
+        }
+
+        function nextPage() {
+            if ((currentPage * itemsPerPage) < images.length) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+
+        // Initialize the first page
+        showPage(currentPage);
+    </script>
+
+    <script src="js/script.js"></script>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

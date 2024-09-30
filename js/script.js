@@ -1,6 +1,6 @@
 
 
-// ============infinite scroll=====================
+// ============infinite scroll for partnership section =====================
 
 const scrollContainer = document.querySelector('.scroll-content');
 const items = scrollContainer.children;
@@ -12,6 +12,7 @@ for (let i = 0; i < itemsCount; i++) {
     scrollContainer.appendChild(clone);
 }
 
+// ==============navbar hide and show addEventListener.==========
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -36,7 +37,42 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
   
-// =============Custom Script for Carousel =============
+// =============Custom Script for alumni 6 per page =============
 
+const itemsPerPage = 6;
+let currentPage = 1;
+const imageContainer = document.querySelector('.image-container');
+const images = Array.from(imageContainer.children);
+const totalPages = Math.ceil(images.length / itemsPerPage);
 
-  
+document.getElementById('totalPages').textContent = totalPages;
+
+function showPage(page) {
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    images.forEach((img, index) => {
+        if (index >= start && index < end) {
+            img.classList.remove('_hidden');
+        } else {
+            img.classList.add('_hidden');
+        }
+    });
+    document.getElementById('currentPage').textContent = page;
+}
+
+function nextPage() {
+    if ((currentPage * itemsPerPage) < images.length) {
+        currentPage++;
+        showPage(currentPage);
+    }
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        showPage(currentPage);
+    }
+}
+
+// Initialize the first page
+showPage(currentPage);

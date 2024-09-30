@@ -40,6 +40,8 @@ img{
     display: block;
     width: 100%;
     object-fit: cover;
+    height: auto;
+    box-sizing: border-box;
 }
 :root{
     --color-background:#E6EFF9;
@@ -1026,7 +1028,7 @@ strong{
 }
 
 .video-wrapper {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     border: 5px solid var(--color-text); 
     border-radius: 10px; 
@@ -1034,8 +1036,9 @@ strong{
 
 .video-wrapper video {
     width: 100%;
-    height: auto;
+    height: 500px;
     display: block;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -1046,6 +1049,10 @@ strong{
     .video-wrapper {
         max-width: 100%;
         border-width: 3px; 
+    }
+
+    .video-wrapper video {
+        height: auto;
     }
 }
 
@@ -1079,7 +1086,10 @@ strong{
     gap: 10.628px;
     background-color: var(--color-white);
     border-radius: 0px 0px 8px 8px;
-    text-wrap: wrap;
+    /* text-wrap: wrap; */
+    /* text-wrap: wrap; */
+    /* Use 'word-break: break-word;' instead of 'text-wrap: wrap;' */
+    word-break: break-word;
 }
 .past-rectors-container{
     /* margin-top: 2rem; */
@@ -1111,4 +1121,7 @@ strong{
 .traction-item p {
     color: var(--color-white);
 }
+/* ///////////////// */
+
+
 
