@@ -11,20 +11,20 @@
     <title>Aeronautical Telecommunication Engineering school detail</title>
     <link rel="shortcut icon" href="image/favicon.ico.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
    
 </head>
 <body>
 
      <!-- Navigation Bar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top hidden">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top _hidden">
         <div class="container nav">
                        
             <div class="logo">
                 <img src="image/favicon.ico.png" alt="">
                 <a class="navbar-brand" href="#" id="logo">Nigerian College of <br>Aviation Technology</a>
             </div>
-
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class=""><i class="bi bi-list"></i></span>
@@ -59,8 +59,10 @@
 
     <!-- Hero Section -->
     <header class="hero--section">
-        <h1><blockquote>Aeronautical</blockquote> Telecommunication Engineering School</h1>
-        <p><em>Explore all the ATE related courses here</em></p>
+       <div class="animate__animated animate__zoomIn">
+            <h1><blockquote>Aeronautical</blockquote> Telecommunication Engineering School</h1>
+            <p><em>Explore all the ATE related courses here</em></p>
+       </div>
         <!-- <a href="#features" class="btn btn-primary">Join today</a> -->
     </header>
 
@@ -70,7 +72,7 @@
         <div class="container-xl expanded">
             <div class="row gy-4">
                 <div class="col-sm-12 col-md-12 col-lg-6 common ">
-                    <div class="legacy-img ">
+                    <div class="legacy-img hidden">
                         <img src="image/HATE.png"  alt="">
                         <div class="minister">
                           <h6>Engr. Eward Yor/ Dean ATE School</h6>  
@@ -78,8 +80,8 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-12 col-lg-6 common">
-                    <div class="heritage-content About_ate">
+                <div class="col-sm-12 col-md-12 col-lg-6 common ">
+                    <div class="heritage-content About_ate hidden">
                         <h6 class="mt-4">Celebrating <strong>NCAT @ 60</strong></h6>
                        <h1>Aeronautical Telecommunication Engineering School.</h1>
 
@@ -490,79 +492,9 @@
         </div>
     </footer>
 
-    <!-- navbar hide and show -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.getElementById('navbar');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const navLinks = document.getElementById('navbarNav');
-            const logo = document.getElementById('logo');
-            let lastScrollTop = 0;
-        
-            window.addEventListener('scroll', function() {
-            let scrollTop = window.scrollY || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop && scrollTop > 200) {
-                navbar.classList.add('visible');
-            } else {
-                navbar.classList.remove('visible');
-            }
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For mobile or negative scrolling
-            });
-        
-            mobileMenu.addEventListener('click', function() {
-            navLinks.classList.toggle('show');
-            mobileMenu.querySelector('.navbar-toggler-icon').classList.toggle('active');
-            logo.classList.toggle('hidden');
-            });
-        });
-    </script>
 
-
-    <!-- SHOW SIX AT A TIME -->
-    <script>
-        const itemsPerPage = 6;
-        let currentPage = 1;
-        const imageContainer = document.querySelector('.image-container');
-        const images = Array.from(imageContainer.children);
-        const totalPages = Math.ceil(images.length / itemsPerPage);
-
-        document.getElementById('totalPages').textContent = totalPages;
-
-        function showPage(page) {
-            const start = (page - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
-            images.forEach((img, index) => {
-                if (index >= start && index < end) {
-                    img.classList.remove('_hidden');
-                } else {
-                    img.classList.add('_hidden');
-                }
-            });
-            document.getElementById('currentPage').textContent = page;
-        }
-
-        function nextPage() {
-            if ((currentPage * itemsPerPage) < images.length) {
-                currentPage++;
-                showPage(currentPage);
-            }
-        }
-
-        function prevPage() {
-            if (currentPage > 1) {
-                currentPage--;
-                showPage(currentPage);
-            }
-        }
-
-        // Initialize the first page
-        showPage(currentPage);
-    </script>
-
-    <script src="js/script.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/mainscript.js"></script>
+    
 </body>
 </html>

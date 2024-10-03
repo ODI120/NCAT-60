@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+
 *{
     /* padding: 0; */
     margin: 0;
@@ -33,6 +34,25 @@ section{
     padding-right: 2rem;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+section{
+    scroll-margin-top: 0px;
+    scroll-behavior: smooth;
+    transition-delay: 50ms;
+}
+.hidden{
+    filter: blur(5px);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.show{
+    filter: blur(0);
+    transform: translateY(0);
+    opacity: 1;
+}
 a{
     text-decoration: none;
 }
@@ -135,7 +155,7 @@ h6{
     }
 }
 
-#navbar.hidden {
+#navbar._hidden {
     opacity: 0;
     transform: translateY(-100%);
     transition: opacity 0.3s, transform 0.3s;
@@ -1053,6 +1073,10 @@ strong{
 
     .video-wrapper video {
         height: auto;
+    }
+    .video-section {
+        padding: 0px 0;
+        
     }
 }
 

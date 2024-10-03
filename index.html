@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="src/bootstrap.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
     <title>Nigerian College of Aviation Technology @ 60</title>
     <link rel="shortcut icon" href="image/favicon.ico.png" type="image/x-icon">
@@ -17,17 +18,17 @@
 <body>
     
     <!-- Navigation Bar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top hidden">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top _hidden">
         <div class="container nav">
                        
-            <div class="logo">
+            <div class="logo" id="">
                 <img src="image/favicon.ico.png" alt="">
                 <a class="navbar-brand" href="#" id="logo">Nigerian College of <br>Aviation Technology</a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class=""><i class="bi bi-list"></i></span>
-                </button>
+                <span class="" ><i class="bi bi-list"></i></span>
+                
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -57,16 +58,16 @@
 
     <header class="hero_section text-center">
 
-        <div class="container-xl common expanded _hero">
+        <div class="container-xl common expanded _hero animate__animated animate__zoomIn">
             <img src="NCAT/logo.png" class=""  alt="">
 
         </div>
         <br>
-        <div class="title common"><h1>Celebrating 60 years of Excellence in Aviation Education</h1></div>
+        <div class="title common animate__animated animate__zoomIn"><h1>Celebrating 60 years of Excellence in Aviation Education</h1></div>
         <svg class="svg-long" xmlns="http://www.w3.org/2000/svg"  height="2" viewBox="0 0 953 2" fill="none">
             <path d="M1 1H952" stroke="#5F6368" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <div class="common ncat_inter">
+        <div class="common ncat_inter ">
             <p>NCAT is an Internationally recognized Aviation Institution in Nigeria.</p>
 
             <svg class="svg-line" xmlns="http://www.w3.org/2000/svg" width="2" height="46" viewBox="0 0 2 46" fill="none">
@@ -81,19 +82,19 @@
 
         <div class="container-xl component-img common ">
             <div class="row common">
-                <div class="col-sm-3 col-md-3 col-lg-3 side_img">
+                <div class="col-sm-3 col-md-3 col-lg-3 side_img animate__animated animate__slideInLeft">
                     <div>
-                        <img src="NCAT/ncat_12.jpg" alt="">
+                        <img src="NCAT/ncat_12.jpg"  alt="">
                     </div>
                 </div>
                 
-                <div class="col-sm-3 col-md-3 col-lg-3 ">
+                <div class="col-sm-3 col-md-3 col-lg-3 side_img animate__animated animate__slideInUp">
                     <div>
                         <img src="NCAT/111 1.png"  alt="">
                     </div>
                 </div>
                 
-                <div class="col-sm-3 col-md-3 col-lg-3 side_img">
+                <div class="col-sm-3 col-md-3 col-lg-3 side_img side_img animate__animated animate__slideInRight">
                     <div>
                         <img src="NCAT/diamod.png" alt="">
                     </div>
@@ -103,14 +104,14 @@
     </header>
     <section id="video-section" class="video-section">
         <div class="container">
-            <div class="header">
+            <div class="header hidden">
                 <h1>Welcome to NCAT</h1>
                 <p>Where Dreams Take Flight</p>
             </div>
             <!-- <h2 class="section-title">Watch Our Video</h2> -->
             <div class="video-wrapper">
                 <video controls poster="dpt-img/citing.jpg">
-                    <source src="video/welcome-video.mp4" type="video/mp4">
+                    <source src="video/ncat-air.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -121,7 +122,7 @@
         <div class="container-xl expanded">
             
             <div class="row common gy-4">
-                <div class="col-sm-12 col-md-12 col-lg-6 common ">
+                <div class="col-sm-12 col-md-12 col-lg-6 common hidden">
                     <div class="legacy-img ">
                         <img src="image/rector.png"  alt="">
                         <div class="minister">
@@ -130,7 +131,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <div class="history-content">
+                    <div class="history-content hidden">
                        <h6>Celebrating <strong>NCAT @ 60</strong></h6>
                        <h1>About the Nigeria College of Aviation Technology (NCAT)</h1>
 
@@ -150,7 +151,7 @@
                 <p>Where Dreams Take Flight</p>
             </div> -->
             
-            <div class="row common gy-3 all-row p-1">
+            <div class="row common gy-3 all-row p-1 hidden">
                 <div class="col-xsm col-sm-6 col-md-4 col-lg-3">
                     <div class="welcome-card-sm">
                        <div>
@@ -215,7 +216,7 @@
         </div>
     </section>
 
-    <section class="history common" id="history">
+    <section class="history common hidden" id="history">
         <div class="container-xl expanded">
             <div class="row common gy-4">
                 <div class="col-sm-12 col-md-12 col-lg-6 common">
@@ -237,7 +238,7 @@
         </div>
     </section>
 
-    <section class="legacy common">
+    <section class="legacy common hidden">
         <div class="container-xl expanded">
             <div class="row common gy-4">
                 <div class="col-sm-12 col-md-12 col-lg-6">
@@ -262,7 +263,7 @@
         </div>
     </section>
 
-    <section class="heritage common">
+    <section class="heritage common hidden">
         <div class="container-xl expanded">
             <div class="row gy-4">
                 <div class="col-sm-12 col-md-12 col-lg-6 common">
@@ -284,7 +285,7 @@
         </div>
     </section>
 
-    <section class="heritage common">
+    <section class="heritage common hidden">
         <div class="container-xl expanded">
             <div class="row gy-4">
                 <div class="col-sm-12 col-md-12 col-lg-6">
@@ -318,12 +319,12 @@
 
     <section class="schools common" id="schools">
         <div class="container-xl expanded cont-holder gy-4 p-1">
-            <div class="header">
+            <div class="header hidden">
                 <h1>Schools in Ncat</h1>
                 <p>Below are the Six schools/faculties in NCAT</p>
             </div>
             <div class="row justify-content-center all-row">
-                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4">
+                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4 hidden">
                     <div class="welcome-card-sm sch">
                         <img src="NCAT/ncat-ate.jpg" alt=""> 
                         <div class="card-content">
@@ -333,7 +334,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4">
+                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4 hidden">
                     <div class="welcome-card-sm sch">
                         <img src="image/pilot.jpeg" alt=""> 
                         <div class="card-content">
@@ -343,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4">
+                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4 hidden">
                     <div class="welcome-card-sm sch">
                         <img src="NCAT/Ame.png" alt=""> 
                         <div class="card-content">
@@ -353,7 +354,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4">
+                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4 hidden">
                     <div class="welcome-card-sm sch">
                         <img src="NCAT/ncat-ams.jpg" alt=""> 
                         <div class="card-content">
@@ -363,7 +364,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4">
+                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4 hidden">
                     <div class="welcome-card-sm sch">
                         <img src="NCAT/AUTOMATED FIRE_SMOKE AIRCRAFT TRAINING SIMULATOR.jpg" alt=""> 
                         <div class="card-content">
@@ -373,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4">
+                <div class="col-xsm col-sm-6 col-md-4 col-lg-3 gy-4 hidden">
                     <div class="welcome-card-sm sch">
                         <img src="NCAT/ATSCOM_language laboratory.jpg" alt=""> 
                         <div class="card-content">
@@ -483,11 +484,11 @@
 
     <section>
         <div class="container-xl expanded">
-            <div class="header">
+            <div class="header hidden">
                 <h1>Awards and achievements</h1>
                 <p>NCAT has been honored with numerous awards for its contribution to aviation training and education, <br> cementing our reputation as a leading institution.</p>
             </div>
-            <div class="row common _invisible">
+            <div class="row common _invisible hidden">
                 
                 <div class="col-sm-12 col-md-4 col-lg-6">
                     <div>
@@ -531,12 +532,12 @@
 
     <section class="facilities common" id="facilities">
         <div class="container-xl expanded">
-            <div class="header">
+            <div class="header hidden ">
                 <h1>Explore NCAT facilities</h1>
                 <p>NCAT's facilities are designed to provide a comprehensive and immersive <br> training experience for students.</p>
             </div>
             <div class="row ">
-                <div class="col-sm-12 col-md-6 col-lg-6 facilities-contents _invisible">
+                <div class="col-sm-12 col-md-6 col-lg-6 facilities-contents _invisible hidden">
                     <div class="row gy-4">
                         <div class="col-sm-12 col-md-12 col-lg-12 facilities-img">
                             <div class="row">
@@ -560,7 +561,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 ">
+                <div class="col-sm-12 col-md-12 col-lg-6 hidden">
                     <!-- <div>
                         <img src="NCAT/sim-1.png" alt="">
                     </div> -->
@@ -642,7 +643,7 @@
     <section>
         <div class="container">
             <div>
-                <div class="header">
+                <div class="header hidden">
                     <h1>Graduations & Activities </h1>
                     <p>What people are saying about us over the years</p>
                 </div>
@@ -715,7 +716,7 @@
 
     <section class="facilities common" id="Alumni">
         <div class="container-xl expanded">
-            <div class="header">
+            <div class="header hidden">
                 <h1>Notable Alumni</h1>
                 <p>Our graduates have gone on to hold significant positions in the aviation industry worldwide, <br> contributing to the growth and safety of global aviation.</p>
             </div>
@@ -784,13 +785,13 @@
 
     <section>
         <div>
-            <div class="header">
+            <div class="header hiddin">
                 <h1>Testimonials</h1>
                 <p>What people are saying about us over the years</p>
             </div>
         </div>
    
-        <div class="common carousel-div">
+        <div class="common carousel-div hidden">
             <div id="carouselExampleAutoplaying" class="carousel carousel-sm slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
 
@@ -854,7 +855,7 @@
 
     <section class="commn" id="Partinerships">
         <div class="container-xl expanded partnership">
-            <div class="header">
+            <div class="header hidden">
                 <h1>In partnership With</h1>
                 <p>What people are saying about us over the years</p>
             </div>
@@ -1056,9 +1057,8 @@
     </script>  -->
 
 
-    <script src="js/script.js"></script>
+    <script src="js/mainscript.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
